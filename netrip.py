@@ -17,6 +17,12 @@ while (os.path.isdir(path) != True):
     path = input('choose a path for wifi log files : ')
     if (os.path.isdir(path) == True):
         break
+    elif path == '':
+        absolute_path = os.path.abspath(__file__)
+        path = os.path.dirname(absolute_path)
+        print("Path: " + os.path.dirname(absolute_path) + '\wifilyzer')
+
+
 path = path + ' '
 push = path[len(path)-2] + path[len(path)-1]         
 
@@ -27,11 +33,11 @@ if push == '/ ' or push == '\ ':
         os.mkdir(path)
 else:
     path = path[0:-1]    
-    path = path + '/wifilizer'
+    path = path + '\wifilizer'
     if (os.path.isdir(path) != True):
         os.mkdir(path)
     
-print(path)
+print('path : ',path)
 
 
 
@@ -48,7 +54,7 @@ lang = ''
 #########################
 # file: Full log; SSIDs #
 #########################
-full = path +'/full.txt'
+full = path +'\full.txt'
 EE = open(full,'w')
 cmd = sp.getoutput('netsh wlan show profiles') 
 EE.write(cmd)
@@ -71,7 +77,6 @@ for i in cmd:
         i = i.split(":")
         i = i[1]
         profiles.append(i)
-print(profiles) 
 
 wifis = {}
 
@@ -143,7 +148,7 @@ EE.close()
 ##################################
 # file :SSIDs and keys only + ip #
 ##################################
-ness = path + '/ness.txt' 
+ness = path + 'ness.txt' 
 FF = open(ness,'w')
 FF.write('\n')
 FF.write('= '*20)
@@ -171,8 +176,6 @@ FF.write(
     "Computer IP Address is:" + IP
 )
 FF.close()
-
-
 
 print('full output at : ',full)
 print('quick output at : ',ness)
