@@ -3,24 +3,16 @@ import socket
 import os 
 
 
-print('\n',
-    '   ================================================= \n',
-    ' /                                                    \ \n',
-    '| the program gets saved wifi data from local device   | \n',
-    '|          and prints them in seperate files           | \n',
-    ' \                                                    /  \n',
-    '   ================================================='
-)
-
 path = ''
+print(os.getcwd())
 while (os.path.isdir(path) != True): 
     path = input('choose a path for wifi log files : ')
     if (os.path.isdir(path) == True):
         break
     elif path == '':
         absolute_path = os.path.abspath(__file__)
-        path = os.path.dirname(absolute_path)
-        print("Path: " + os.path.dirname(absolute_path) + '\wifilyzer')
+        path = os.getcwd()
+        print("Path: " + path + '\wifilyzer')
 
 
 path = path + ' '
@@ -54,7 +46,7 @@ lang = ''
 #########################
 # file: Full log; SSIDs #
 #########################
-full = path +'\full.txt'
+full = path +'/full.txt'
 EE = open(full,'w')
 cmd = sp.getoutput('netsh wlan show profiles') 
 EE.write(cmd)
@@ -148,7 +140,7 @@ EE.close()
 ##################################
 # file :SSIDs and keys only + ip #
 ##################################
-ness = path + 'ness.txt' 
+ness = path + '/ness.txt' 
 FF = open(ness,'w')
 FF.write('\n')
 FF.write('= '*20)
@@ -179,3 +171,4 @@ FF.close()
 
 print('full output at : ',full)
 print('quick output at : ',ness)
+
