@@ -21,7 +21,8 @@ and prints the output in seperate files
 ```
 cd your/directory/
 git clone 'https://github.com/MythicalMayhem/netRipper'
-netrip.exe
+cd netRipper
+python netrip.py
 ```
 
 ## Usage
