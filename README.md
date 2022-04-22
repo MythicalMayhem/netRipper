@@ -13,7 +13,7 @@ and
 netsh wlan show profile name="profilename" key=clear
 ```
 and prints the output in seperate files 
-+ bonus : also prints ip adress in ness.txt 
+> bonus : also prints ip adress in ness.txt 
 
 
 ## Installation
@@ -25,7 +25,7 @@ netrip.exe
 ```
 
 ## Usage
-after executing netrip.exe you'll be prompted on the output file location
+after executing netrip.exe you'll be prompted on the output file location  
 ***press Enter directly to choose the same directory as netrip.exe***
 
 and done
