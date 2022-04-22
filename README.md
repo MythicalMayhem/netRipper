@@ -33,7 +33,7 @@ and done
 ## Example 
 
 The output should be something like this 
-![example](/assets/exp.jpg)
+![example](netRipper/assests/exp.jpg)
 
 ## Compatibility
 currently netripper is only works on computers with these languages : 
