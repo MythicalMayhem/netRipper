@@ -26,7 +26,7 @@ netrip.exe
 
 ## Usage
 after executing netrip.exe you'll be prompted on the output file location  
-***press Enter directly to choose the same directory as netrip.exe***
+>press Enter directly to choose the same directory as netrip.exe
 
 and done
 
