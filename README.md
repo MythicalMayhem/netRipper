@@ -2,7 +2,7 @@
 ##### rip those saved networks ayy
 
 
-##Description
+## Description
 Netripper uses cmd shell output 
 for commands such as 
 ```
@@ -16,7 +16,7 @@ and prints the output in seperate files
 + bonus : also prints ip adress in ness.txt 
 
 
-##Installation
+## Installation
 
 ```
 cd your/directory/
@@ -24,18 +24,18 @@ git clone 'https://github.com/MythicalMayhem/netRipper'
 netrip.exe
 ```
 
-##Usage
+## Usage
 after executing netrip.exe you'll be prompted on the output file location
 - press Enter directly to choose the same directory as netrip.exe
 
 and done
 
-##Example 
+## Example 
 
 The output should be something like this 
 ![example](/assets/exp.jpg)
 
-##Compatibility
+## Compatibility
 currently netripper is only works on computers with these languages : 
 -Frensh
 -English
