@@ -37,7 +37,7 @@ The output should be something like this
 
 ## Compatibility
 currently netripper is only works on computers with these languages : 
--Frensh
--English
+- Frensh
+- English
 
 
