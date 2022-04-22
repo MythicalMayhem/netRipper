@@ -32,8 +32,8 @@ and done
 
 ## Example 
 
-The output should be something like this 
-![example](netRipper/assests/exp.jpg)
+The output should be something like this  
+![example](https://github.com/MythicalMayhem/netRipper/blob/main/assests/exp.jpg)
 
 ## Compatibility
 currently netripper is only works on computers with these languages : 
