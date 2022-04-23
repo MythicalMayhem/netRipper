@@ -1,5 +1,5 @@
 # netRipper
-##### rip those saved networks ayy
+##### script to get saved network and their passwords  
 
 
 ## Description
