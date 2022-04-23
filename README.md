@@ -15,6 +15,8 @@ netsh wlan show profile name="profilename" key=clear
 and prints the output in seperate files 
 > bonus : also prints ip adress in ness.txt 
 
+in the near future it'll have database implementation probably using Django or emailing system
+
 
 ## Installation
 
